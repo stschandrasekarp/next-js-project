@@ -11,7 +11,6 @@ export const Header = () => {
 
     const handleChange = (e) => {
         const { value } = e.target;
-        var r = document.querySelector(':root');
         if (+value === 1) {
             setProperty('rgb(253, 232, 239)', 'rgb(228, 42, 93)');
         } else if (+value === 2) {
