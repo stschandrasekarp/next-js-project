@@ -2,11 +2,13 @@ import React from 'react';
 import styles from "../styles/Home.module.css";
 
 export const Header = () => {
+    // to change the property of root values
     const setProperty = (col1, col2) => {
         var r = document.querySelector(':root');
         r.style.setProperty('--primary-color', col1);
         r.style.setProperty('--secondary-color', col2);
     }
+
     const handleChange = (e) => {
         const { value } = e.target;
         var r = document.querySelector(':root');
